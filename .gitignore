@@ -1,0 +1,96 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nosexy/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS generated files
+Thumbs.db
+EHthumbs.db
+Desktop.ini
+
+# Project-specific exclusions
+# Large model weights (these are downloaded automatically or locally trained)
+yolov8n.pt
+gender_net.caffemodel
+
+# Exclude training runs directory but keep the best trained model weight for ease of use
+runs/detect/train/weights/last.pt
+runs/detect/train/args.yaml
+runs/detect/train/labels.jpg
+runs/detect/train/results.csv
+runs/detect/train/train_batch0.jpg
+runs/detect/train/train_batch1.jpg
+runs/detect/train/train_batch2.jpg
+
+# Exclude raw local dataset files (huge images)
+train/
+test/
+valid/
+data.yaml
+*.zip
+
+# Exclude credentials and local secrets
+telegram_config.json
